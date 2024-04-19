@@ -1,0 +1,138 @@
+body{
+    padding: 5px;
+    display: flex;
+    /*左右置中*/
+    justify-content: center;
+    background-color: #03045E;
+    color: #CAF0F8;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體","sans-serif";
+}
+.resume{
+    /*設定左右區塊顯示的比例*/
+    display: flex;
+    /*設定顯示的最大寬度*/
+    max-width: 950px;
+    border: solid 8px #90E0EF;
+}
+.left{
+    flex:5;
+    padding: 10px;
+    border-right: solid 2px #90E0EF;
+}
+.right{
+    flex:7;
+    padding: 10px;
+    /*設定相對位置 在right底下的div都以right的左上角為座標*/
+    position: relative;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+h4{
+    margin: 0px;
+    margin-top: 40px;
+    /*文字粗體大小*/
+    font-weight: 400px;
+    /*透明度*/
+    opacity: 0.8;
+    color: #ff90b3;
+}
+h2{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+/*在html有h2指令的地方，的後面都加上以下格式設定*/
+h2::after{
+    content: "";
+    width: 20px;
+    height: 5px;
+    background-color: #ff90b3;
+    display: inline-block;
+    margin-left: 10px;
+}
+a{
+    color: initial; /*取消連結預設藍字*/
+    text-decoration: initial; /*取消連結預設底線*/
+    color: #CAF0F8;
+    font-size: 15px;
+}
+.btn{
+    border: solid 3px #ff90b3;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 10px;   
+}
+.fill{
+    background-color: #ff90b3;
+}
+.decoration{
+    width: 300px;
+    height: 140px;
+    /*漸層顏色 (角度,開始顏色,結束顏色)*/
+    background: linear-gradient(100deg, #ff90b3, #90E0EF);
+    border-radius: 70px 0px 0px 70px;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+.Experience{
+    margin: top 500px;
+}
+.listExperience>li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.listExperience li ul{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: solid 4px #ff90b3;
+    border-image:linear-gradient(to bottom, #ff90b3, #03045E);
+    border-image-slice: 1;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #90e1ef3d;
+    position: relative;
+    overflow: hidden;
+}
+.p90,.p180,.p270,.p360{
+    /*因為.p90在.circle底下，所以50%表示以circle的寬與高的50%*/
+    width: 50%;
+    height: 50%;
+    background-color: #ff90b3;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.p180{
+    top: 50%;
+}
+.p270{
+    top: 50%;
+    left: 0;
+}
+.p360{
+    left: 0;
+}
+.listSkill li{
+    display: flex;
+    padding-top: 20px ;
+}
+.circle::after{
+    content: "";
+    /*cala是計算函數*/
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 50%;
+    background-color: #03045E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

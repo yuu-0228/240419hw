@@ -1,0 +1,77 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #e4d8d4;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    /*左右置中 */
+    align-items: center;
+     /*上下置中*/
+}
+h1{
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #442b07;
+    padding: 10px;
+}
+p{
+    margin: 10px;/*外距*/
+    padding: 20px;
+}
+h2{
+    font-size: 20px;
+    color: #442b07;
+    background-color: #d3b299;
+    padding: 10px;
+}
+.sepcialtitle{
+    color: #241e00;
+    background-color: #fffbe8;
+}
+/* *代表所有有tag<>的元素 都要照此格是設定*/
+*{
+    /*border: solid 3px #ffffff ;*/
+    /*實心線條*/
+    font-family: 微軟正黑體;
+    font-size: 18px;
+}
+.card{
+    width: 800px;
+    display: flex; 
+    /*設定在card以下的div都在同一行上*/
+    border:solid 5px #363130;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.left{
+    width: 30%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1280px-Roasted_coffee_beans.jpg);
+}
+.right{
+    width: 70%;
+    background-color: #ede2d4;
+}
+
+ul li{
+    display: inline-block;
+    /*超出範圍換行*/
+    width: 30%;
+    vertical-align: top;
+    /*至頂對齊*/
+}
+.smalltext{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fffbe8;
+    font-weight: normal;
+    /*取消h1預設增加的粗體*/
+}
+ul li h3{
+    background-color: #442b07;
+    color: #e8d6c7;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    /*文字置中*/
+}

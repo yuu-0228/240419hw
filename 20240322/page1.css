@@ -1,0 +1,28 @@
+body{
+    padding: 5px;
+    display: flex;
+    /*左右置中*/
+    justify-content: center;
+    background-color: #03045E;
+    color: #CAF0F8;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: "微軟正黑體","sans-serif";
+}
+
+a{
+    color: initial; /*取消連結預設藍字*/
+    text-decoration: initial; /*取消連結預設底線*/
+    color: #CAF0F8;
+    font-size: 15px;
+}
+.btn{
+    border: solid 3px #ff90b3;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 10px;   
+}
+.fill{
+    background-color: #ff90b3;
+}
